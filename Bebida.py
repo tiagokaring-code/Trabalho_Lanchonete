@@ -14,3 +14,10 @@ class bebida(produto):
         self._mls = valor
 
     def servir_com_gelo(self) -> str:
+        return f"{self.nome} servido com gelo e limao!"
+
+    def calcular_valor_final(self) -> float:
+        return self.valor * 1.05
+
+    def __str__(self) -> str:
+        return f"[Bebida] {self._nome} ({self._mililitros}ml) - R$ {self.calcular_preco_final():.2f}"
