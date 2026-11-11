@@ -1,6 +1,6 @@
 from Produto import Produto
 class Lanche(Produto):
-    def __init__(self,nome:str,valor:float,ingredientes:list):
+    def __init__(self, nome, valor, ingredientes):
         super().__init__(nome,valor)
         self._ingredientes = ingredientes
 

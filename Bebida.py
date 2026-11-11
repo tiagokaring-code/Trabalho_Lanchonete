@@ -1,6 +1,6 @@
 from Produto import Produto
 class Bebida(Produto):
-    def __init__(self,nome: str, valor: float, mls: int):
+    def __init__(self,nome, valor, mls):
         super().__init__(nome,valor)
         self.mls = mls
     @property
