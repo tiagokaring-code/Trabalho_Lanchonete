@@ -1,5 +1,5 @@
-from produto import produto
-class lanche(produto):
+from Produto import Produto
+class Lanche(Produto):
     def __init__(self,nome:str,valor:float,ingredientes:list):
         super().__init__(nome,valor)
         self._ingredientes = ingredientes

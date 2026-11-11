@@ -1,5 +1,5 @@
-from produto import produto
-class bebida(produto):
+from Produto import Produto
+class Bebida(Produto):
     def __init__(self,nome: str, valor: float, mls: int):
         super().__init__(nome,valor)
         self.mls = mls
@@ -10,7 +10,7 @@ class bebida(produto):
     @mls.setter
     def mls(self, valor: int):
         if valor <= 0:
-            raise valueError("O volume deve ser maior que 0")
+            raise ValueError("O volume deve ser maior que 0")
         self._mls = valor
 
     def servir_com_gelo(self) -> str:
