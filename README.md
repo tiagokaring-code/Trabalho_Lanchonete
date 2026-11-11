@@ -14,5 +14,5 @@ python main.py
 ## Estrutura
 - produto.py: classe base Produto
 - lanche.py / bebida.py / sobremesa.py: classes filhas
-- lanchonete.py: gerenciadora
+- lanchonete.py : gerenciadora
 - Main.py : menu interativo
