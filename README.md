@@ -15,4 +15,4 @@ python main.py
 - produto.py: classe base Produto
 - lanche.py / bebida.py / sobremesa.py: classes filhas
 - lanchonete.py: gerenciadora
-- main.py: menu interativo
+- Main.py : menu interativo
