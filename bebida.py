@@ -1,6 +1,7 @@
-from Produto import Produto
-class Bebida(Produto):
-    def __init__(self,nome, valor, mls):
+from produto import Produto
+
+class bebida(Produto):
+    def __init__(self,nome: str, valor: float, mls: int):
         super().__init__(nome,valor)
         self.mls = mls
     @property
@@ -17,7 +18,7 @@ class Bebida(Produto):
         return f"{self.nome} servido com gelo e limao!"
 
     def calcular_valor_final(self) -> float:
-        return self.valor * 1.05
+        return self.preco * 1.05
 
     def __str__(self) -> str:
-        return f"[Bebida] {self._nome} ({self._mililitros}ml) - R$ {self.calcular_preco_final():.2f}"
+        return f"[Bebida] {self.nome} ({self._mls}ml) - R$ {self.calcular_valor_final():.2f}"

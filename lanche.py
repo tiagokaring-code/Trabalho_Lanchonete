@@ -1,6 +1,6 @@
-from Produto import Produto
-class Lanche(Produto):
-    def __init__(self, nome, valor, ingredientes):
+from produto import Produto
+class lanche(Produto):
+    def __init__(self,nome:str,valor:float,ingredientes:list):
         super().__init__(nome,valor)
         self._ingredientes = ingredientes
 
@@ -12,8 +12,8 @@ class Lanche(Produto):
         self._ingredientes.append(ingredientes)
         self.valor += 2.0 #valor do extra
 
-    def calcular_valor_final(self) -> float:
-        return self.valor + 1.50 #taxa do preparador do lanche
+    def calcular_valor_final(self):
+        return self.preco + 1.50  # taxa do preparador do lanche
 
     def __str__(self) -> str:
         ingredientes_str = ",".join(self.ingredientes)
